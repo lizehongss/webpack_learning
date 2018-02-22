@@ -1,3 +1,3 @@
-# webpack基本配置
-## 主要是学习在vue构建spa应用的配置，啥都看不懂阶段。。。
+# webpack基本配置学习
+## 主要是学习webpack在vue构建spa应用时的配置
 
