@@ -7,7 +7,8 @@ var config={
 	output:{
 		path: path.join(__dirname,'./dist'),
 		publicPath: '/dist/',
-		filename:'main.js',
+		filename:'[name].js',
+		chunkFilename: '[name].chunk.js'
 			},
 	module:{
 	rules:[
@@ -42,7 +43,10 @@ var config={
 	}
 	]
 	},
-	plugins:[new ExtractTextPlugin("main.css"
+	plugins:[new ExtractTextPlugin({
+		filename: '[name].css',
+		allChunks: true
+	}
 	)]
 };
 module.exports=config;
